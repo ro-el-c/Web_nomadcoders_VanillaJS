@@ -13,7 +13,6 @@
 
 // console.log("Changed my name : " + myName);
 
-
 // const amIFat = false;
 // const somethingThere = null;
 // let something;
@@ -21,7 +20,6 @@
 // console.log(amIFat);
 // console.log(somethingThere);
 // console.log(something);
-
 
 const mon = "mon";
 const tue = "tue";
@@ -33,7 +31,6 @@ const sun = "sun";
 
 const dow = mon + tue + wed + thu + fri + sat + sun;
 console.log(dow);
-
 
 const daysOfWeek = ["mon", "tue", "wed", "thu", "fri", "sat"];
 console.log(daysOfWeek);
@@ -50,6 +47,23 @@ const player = {
   name: "ro-el",
   points: 100,
   fat: false,
+
+  sayHello: function (otherPersonName) { // object에 function 포함
+    console.log('Hello, ' + otherPersonName)
+  },
 };
-console.log(player.name)
+console.log(player.name);
 // player 자체를 새로운 값으로 지정하려고 하면 오류 밠생
+player.sayHello("Tom");
+player.partner = "Grace"; // object에 새로운 속성 추가
+console.log(player);
+
+function sayHello(name) {
+  console.log("Hello, " + name + "!");
+}
+sayHello("nico");
+
+function plus(num1, num2) {
+  console.log(num1 + num2);
+}
+plus(5, 12);
