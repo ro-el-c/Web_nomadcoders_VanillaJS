@@ -48,8 +48,9 @@ const player = {
   points: 100,
   fat: false,
 
-  sayHello: function (otherPersonName) { // object에 function 포함
-    console.log('Hello, ' + otherPersonName)
+  sayHello: function (otherPersonName) {
+    // object에 function 포함
+    console.log("Hello, " + otherPersonName);
   },
 };
 console.log(player.name);
@@ -64,6 +65,8 @@ function sayHello(name) {
 sayHello("nico");
 
 function plus(num1, num2) {
-  console.log(num1 + num2);
+  // console.log(num1 + num2);
+  return num1 + num2;
 }
-plus(5, 12);
+const plusedNum = plus(5, 12);
+console.log(plusedNum);
