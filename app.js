@@ -45,4 +45,11 @@ console.log(daysOfWeek[2]);
 daysOfWeek.push("sun");
 console.log(daysOfWeek);
 
-
+// object
+const player = {
+  name: "ro-el",
+  points: 100,
+  fat: false,
+};
+console.log(player.name)
+// player 자체를 새로운 값으로 지정하려고 하면 오류 밠생
